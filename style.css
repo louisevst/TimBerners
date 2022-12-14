@@ -1,0 +1,175 @@
+html{
+    min-width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1, h4{
+    margin: 5px;
+}
+hr{
+    color: gray;
+    width: 50%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    min-width: 100%;
+    max-width: 100%;
+}
+header{
+    background-color: rgb(29, 29, 64);
+    height: 30px;
+    color: white;
+    max-width: 100%;
+    min-width: 100%;
+    font-size: 13.33px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 0 5px;
+}
+.push{
+    margin-left: auto;
+}
+header button{
+    font-size: 13.33px;
+    margin: 5px;
+    color: white;
+    padding: 2px;
+}
+.sub{
+    background-color: brown;
+    border: none;
+    border-radius: 5px;
+}
+.log{
+    background-color: rgb(29,29,64);
+    border: none;
+}
+nav{
+    padding-left: 10px;
+    padding-top: 35px;
+    font-size: 11.11px;
+}
+nav a {
+    padding-right: 5px;
+}
+.socials{
+    padding: 5px 0;
+}
+.socials button{
+    color: blue;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+    border: solid 1px gray;
+    background-color: white;
+}
+.socials button:hover{
+    background-color: rgb(160, 160, 255);
+}
+.container1{
+    display: flex;
+    border: solid rgb(163, 163, 163) 0.5px;
+    flex-direction: column;
+    margin: 10px;
+    padding: 0 10px;
+}
+.imgcontainer{
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(163, 163, 163) 0.5px;
+    margin: 10px;
+    border-radius: 5px;
+}
+.imgcontainer p{
+    margin: 10px 5px;
+}
+.resume{
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(163, 163, 163) 0.5px;
+    padding: 15px;
+    font-family: Helvetica, sans-serif;
+    line-height: 20px;
+    font-size: 13.3px;
+}
+.center{
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+}
+img{
+    max-width: 100%;
+    z-index: -1;
+}
+.content{
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+    border: solid grey 0.5px;
+    padding: 5px;
+    width: 70%;
+    margin: auto;
+}
+.content:hover{
+    background-color: rgb(160, 160, 255);
+}
+@media only screen and (max-width: 600px) {
+    header a{
+        display: none;
+    }
+    .site{
+        display: block;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .container1{
+        margin: 50px;
+    }
+    header{
+        font-size: 12.80px;
+    }
+    header button{
+        font-size: 12.80px;
+    }
+    nav{
+        font-size: 10.24px;
+    }
+    .resume{
+        font-size: 12.8px;
+    }
+
+}
+@media only screen and (min-width: 798px){
+    .container1{
+        max-width: 50%;
+        padding: 20px;
+    }
+    .container2{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+    }
+
+    .text{
+        max-width: 60%;
+        font-size: 21.33px;
+        margin-right: 20px;
+        line-height: 30px;
+    }
+    .resume{
+        max-width: 40%;
+    }
+    h1{
+        font-size: 37.9px;
+    }
+    h4{
+        font-size: 21.33px;
+    }
+    .intro{
+        font-size: 12px;
+        color: gray;
+        line-height: 10px;
+    }
+}
