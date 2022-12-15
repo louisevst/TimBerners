@@ -19,8 +19,9 @@ body{
     max-width: 100%;
 }
 #credited{
-    text-decoration: dotted !important;
-    text-decoration-style:dotted !important;
+    text-decoration: underline dotted !important;
+    text-decoration-style: underline dotted !important;
+    color:  rgb(3, 3, 129);
 }
 header{
     background-color: rgb(29, 29, 64);
@@ -49,6 +50,9 @@ header button{
     color: white;
     padding: 2px;
 }
+.logo{
+    max-height: 20px;
+}
 .sub{
     background-color: brown;
     border: none;
@@ -61,7 +65,7 @@ header button{
 nav{
     padding-left: 10px;
     padding-top: 35px;
-    font-size: 11.11px;
+    font-size: 13.33px;
     font-family: Helvetica, sans-serif;
     color: rgb(20, 20, 130);
 }
@@ -71,6 +75,9 @@ nav a {
 a{
     text-decoration: none;
     color: rgb(3, 3, 129);
+}
+a:hover{
+    text-decoration: underline;
 }
 .socials{
     padding: 5px 0;
@@ -84,7 +91,15 @@ a{
     background-color: white;
 }
 .socials button:hover{
-    background-color: rgba(87, 87, 249, 0.399);
+    background-color:rgba(165, 165, 255, 0.3);
+}
+.socials button:active{
+    color: white;
+    background-color: blue;
+}
+.intro{
+    color: rgb(49, 49, 49);
+    margin-bottom: 10px;
 }
 .container1{
     display: flex;
@@ -131,14 +146,59 @@ img{
     margin: auto;
 }
 .content:hover{
-    background-color: rgba(87, 87, 249, 0.399);
+    background-color: rgba(165, 165, 255, 0.3);
+}
+.content:active{
+    background-color: blue;
+    color: white;
+}
+.p1{
+    margin-top: 0;
+}
+@media only screen and (max-width:280px){
+    header{
+        height: 50px;
+        justify-content: center;
+    }
+    .push{
+        margin-left: auto;
+    }
+    header i{
+        margin: 0 5px;
+    }
+    nav{
+        padding-top: 55px;
+    }
 }
 @media only screen and (max-width: 600px) {
+    header{
+        justify-content: space-around;
+    }
     header a{
         display: none;
     }
+    header i{
+        margin: 0 10px
+    }
+    .push{
+        display: flex;
+        justify-content: end;
+    }
     .site{
         display: block;
+    }
+    .socials button{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+    .socials button i{
+        padding-right: 10px;
+    }
+    .p1{
+        margin-top: 15px;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -149,7 +209,7 @@ img{
         display: none;
     }
     .container1{
-        margin: 50px;
+        margin: 50px 100px;
     }
     header{
         font-size: 12.80px;
@@ -216,7 +276,6 @@ img{
     }
     .intro{
         font-size: 12px;
-        color: gray;
         line-height: 10px;
     }
     nav{
